@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Telegram Mini App Auth Extractor</title>
+  <style>
+    /* Styling for the body element */
+    body {
+      background: rgb(204,204,204); /* Light gray background */
+      background: linear-gradient(90deg, rgba(204,204,204,1) 30%, rgba(240,240,240,1) 70%); /* Gradient background */
+      min-width: 300px; /* Minimum width of the popup */
+      padding: 20px; /* Padding inside the popup */
+      font-family: Arial, sans-serif; /* Font style */
+      overflow-x: hidden; /* Hide horizontal overflow */
+      display: flex; /* Flexbox layout */
+      flex-direction: column; /* Arrange children in a column */
+    }
+    /* Styling for the heading element */
+    h1 {
+      font-size: 24px; /* Font size of the heading */
+      margin-top: 0; /* Remove top margin */
+      text-align: center; /* Center-align the text */
+    }
+    /* Styling for the authorization string paragraph */
+    #authString {
+      margin-top: 0; /* Remove top margin */
+      margin-bottom: 20px; /* Space below the element */
+      padding: 10px; /* Padding inside the paragraph */
+      border: 2px solid #bbb; /* Border around the paragraph */
+      border-radius: 5px; /* Rounded corners */
+      background-color: #eee; /* Background color */
+      overflow: scroll; /* Enable scrolling if content overflows */
+    }
+    /* Styling for buttons */
+    button {
+      padding: 10px 10px; /* Padding inside the button */
+      background-color: #007bff; /* Button background color */
+      color: white; /* Text color */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth background color transition */
+      width: 30%; /* Button width */
+    }
+    /* Styling for button hover state */
+    button:hover {
+      background-color: #0056b3; /* Darker background color on hover */
+    }
+    /* Styling for the GitHub link button */
+    .github-button {
+      display: inline-block; /* Inline-block display for button */
+      background-color: #24292e; /* GitHub button background color */
+      color: #ffffff; /* Text color */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      padding: 10px 10px; /* Padding inside the button */
+      text-align: center; /* Center-align text */
+      text-decoration: none; /* Remove underline from link */
+      font-size: 14px; /* Font size of the button text */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth background color transition */
+      width: 20%; /* Button width */
+    }
+    /* Styling for GitHub button hover state */
+    .github-button:hover {
+      background-color: #1a1e21; /* Darker background color on hover */
+    }
+    /* Container for buttons */
+    .button-container {
+      display: flex; /* Flexbox layout */
+      justify-content: space-around; /* Distribute space between buttons */
+      width: 100%; /* Full width */
+      max-width: 300px; /* Maximum width of the container */
+    }
+  </style>
+</head>
+<body>
+  <h1>Telegram Mini App Auth Extractor</h1>
+  <p id="authString">Here you will get Authorization String.</p>
+  <div class="button-container">
+    <!-- Button to initiate the check for authorization -->
+    <button id="checkAuthButton">Check</button>
+    <!-- Button to copy the authorization string -->
+    <button id="copyAuthButton">Copy</button>
+    <!-- GitHub link styled as a button -->
+    <a href="https://github.com/ButterDevelop/TelegramMiniAppAuthExtractor" target="_blank" class="github-button">GitHub</a>
+  </div>
+  <!-- Link to the JavaScript file for popup functionality -->
+  <script src="popup.js"></script>
+</body>
+</html>
