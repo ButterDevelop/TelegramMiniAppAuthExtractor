@@ -7,7 +7,7 @@
     body {
       background: rgb(204,204,204); /* Light gray background */
       background: linear-gradient(90deg, rgba(204,204,204,1) 30%, rgba(240,240,240,1) 70%); /* Gradient background */
-      min-width: 300px; /* Minimum width of the popup */
+      min-width: 400px; /* Minimum width of the popup */
       padding: 20px; /* Padding inside the popup */
       font-family: Arial, sans-serif; /* Font style */
       overflow-x: hidden; /* Hide horizontal overflow */
@@ -39,17 +39,15 @@
       border-radius: 5px; /* Rounded corners */
       cursor: pointer; /* Pointer cursor on hover */
       transition: background-color 0.3s; /* Smooth background color transition */
-      width: 30%; /* Button width */
+      width: 20%; /* Button width */
     }
     /* Styling for button hover state */
     button:hover {
       background-color: #0056b3; /* Darker background color on hover */
     }
-    /* Styling for the GitHub link button */
-    .github-button {
-      display: inline-block; /* Inline-block display for button */
-      background-color: #24292e; /* GitHub button background color */
-      color: #ffffff; /* Text color */
+	/* Styling for the link buttons */
+	.link-button {
+	  display: inline-block; /* Inline-block display for button */
       border: none; /* Remove border */
       border-radius: 5px; /* Rounded corners */
       padding: 10px 10px; /* Padding inside the button */
@@ -58,18 +56,33 @@
       font-size: 14px; /* Font size of the button text */
       cursor: pointer; /* Pointer cursor on hover */
       transition: background-color 0.3s; /* Smooth background color transition */
-      width: 20%; /* Button width */
+	}
+    /* Styling for the GitHub link button */
+    .github-button {
+      background-color: #24292e; /* GitHub button background color */
+      color: #ffffff; /* Text color */
+	  width: 15%; /* Button width */
     }
     /* Styling for GitHub button hover state */
     .github-button:hover {
       background-color: #1a1e21; /* Darker background color on hover */
+    }
+	/* Styling for the AutoBlumFarm link button */
+    .autoblumfarm-button {
+      background-color: #086e15; /* GitHub button background color */
+      color: #fff1ba; /* Text color */
+	  width: 25%; /* Button width */
+    }
+    /* Styling for AutoBlumFarm button hover state */
+    .autoblumfarm-button:hover {
+      background-color: #05420c; /* Darker background color on hover */
     }
     /* Container for buttons */
     .button-container {
       display: flex; /* Flexbox layout */
       justify-content: space-around; /* Distribute space between buttons */
       width: 100%; /* Full width */
-      max-width: 300px; /* Maximum width of the container */
+      max-width: 400px; /* Maximum width of the container */
     }
   </style>
 </head>
@@ -82,7 +95,9 @@
     <!-- Button to copy the authorization string -->
     <button id="copyAuthButton">Copy</button>
     <!-- GitHub link styled as a button -->
-    <a href="https://github.com/ButterDevelop/TelegramMiniAppAuthExtractor" target="_blank" class="github-button">GitHub</a>
+    <a href="https://github.com/ButterDevelop/TelegramMiniAppAuthExtractor" target="_blank" class="link-button github-button">GitHub</a>
+	<!-- AutoBlumFarm link styled as a button -->
+    <a href="https://t.me/AutoBlumFarm" target="_blank" class="link-button autoblumfarm-button">AutoBlumFarm</a>
   </div>
   <!-- Link to the JavaScript file for popup functionality -->
   <script src="popup.js"></script>

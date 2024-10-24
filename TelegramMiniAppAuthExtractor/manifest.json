@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Telegram Mini App Auth Extractor",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Extracts authorization string for Telegram Mini Apps from web version.",
   "permissions": [
     "tabs",
