@@ -3,7 +3,9 @@
 
 Link to it in Chrome Extensions Store: [here it is](https://chromewebstore.google.com/detail/telegram-mini-app-auth-ex/fjmkmlebpiodjmkpbpblflpgkmojigpm).
 
-It was created for my another huge project users: [Auto Blum Farm Bot in Telegram](https://t.me/AutoBlumFarm). Actually, check my GitHub profile. I am planning to publish it's source one day, so maybe you read this when it's done.
+It was created for my another huge project users: [Auto Blum Farm Bot in Telegram](https://t.me/AutoBlumFarm).
+You can find it's source at [backend repo](https://github.com/ButterDevelop/BlumBotFarm) and [frontend repo](https://github.com/ButterDevelop/AutoBlumFarmBot).
+
 
 ## How does it work?
 
